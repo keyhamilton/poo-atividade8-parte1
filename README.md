@@ -4,19 +4,23 @@
 
 1) Enumere os 3 tipos mais comuns de tratamento de erros e exemplifique com
 códigos seus ou pesquisados na internet.
+
     R: 1- Desconsiderar a operação; 2- Exibir mensagem de erro; 3- Retornar um código de erro.
 
 2) Explique por que cada um dos 3 métodos acima possui limitações de uso.
+
     R: A abordagem de desconsiderar a operação é problemática porque não existe nenhum sinal de que a operação foi realizada, já que nada acontece de visível caso a operação não seja realizada.
     Exibir mensagem de erro é uma opção melhor que apenas desconsiderar a operação em caso de erro, mas porém, temos o problema de ficarmos limitados à interface texto, o que não é visualizada em uma interface gráfica, por exemplo.
     Retornar um código de erro cria muitas complicações a medida que a quantidade de erros aumenta. Outro problema associado a esse método é o uso de flags, considerado má prática, ou ainda a possibilidade de confundir um valor calculado em uma operação com o código de erro.
 
 3) Com o código repassado, implemente o como nos slides o lançamento da exceção
 no método sacar e realize um teste para saques que deixariam o saldo negativo.
+
     R: Vide código no arquivo conta.ts.
 
 4) Crie duas contas e teste o método transferir de modo que a conta a ser debitada
 não possua saldo suficiente. Explique o que ocorreu.
+
     R: Aparece no console a seguinte mensagem: 
     /home/hamdev/Documentos/poo/atividade8-parte1/build/conta.js:17
             throw new Error('Saldo insuficiente.');
@@ -38,6 +42,7 @@ Chame o método transferir novamente passando um valor que lance a exceção na
 classe conta. Você considera que o lançamento da exceção foi “propagado” para o
 método conta.transferir(), banco.transferir() e o método transferir do script app?
 Como você avalia a confiabilidade dessa implementação.
+
     R: Podemos dizer que houve propagação já que o erro é lançado somente no método da classe conta, contudo, a indicação de erro aponta também para todas classes que, de alguma forma, fazem uso do método sacar.
 
     A seguinte mensagem de erro é mostrada no console:
