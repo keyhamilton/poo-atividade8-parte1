@@ -23,6 +23,7 @@ não possua saldo suficiente. Explique o que ocorreu.
 
     R: Aparece no console a seguinte mensagem: 
     /home/hamdev/Documentos/poo/atividade8-parte1/build/conta.js:17
+    
             throw new Error('Saldo insuficiente.');
             ^
 
@@ -48,6 +49,7 @@ Como você avalia a confiabilidade dessa implementação.
     A seguinte mensagem de erro é mostrada no console:
 
     /home/hamdev/Documentos/poo/atividade8-parte1/build/conta.js:17
+    
             throw new Error('Saldo insuficiente.');
             ^
 
@@ -71,6 +73,7 @@ teste também a chamada dos métodos passando como parâmetro valores < 0
     R: As mensagens de erro abaixo demonstram o correto lançamento de erros nos locais esperados do código.
 
     /home/hamdev/Documentos/poo/atividade8-parte1/build/conta.js:7
+    
             throw new Error("Saldo negativo.");
             ^
 
@@ -86,6 +89,7 @@ teste também a chamada dos métodos passando como parâmetro valores < 0
     
     hamdev@Dell-inspiron153567:~/Documentos/poo/atividade8-parte1/build$ node app.js 
     /home/hamdev/Documentos/poo/atividade8-parte1/build/conta.js:29
+    
                 throw new Error("Valor negativo.");
                 ^
 
@@ -100,6 +104,7 @@ teste também a chamada dos métodos passando como parâmetro valores < 0
         at node:internal/main/run_main_module:17:47
     hamdev@Dell-inspiron153567:~/Documentos/poo/atividade8-parte1/build$ node app.js 
     /home/hamdev/Documentos/poo/atividade8-parte1/build/conta.js:23
+    
                 throw new Error("Valor negativo.");
                 ^
 
